@@ -4,15 +4,22 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
+:root {
+    --gris-claro: hsl(228, 12%, 44%);
+    --card-bg: hsl(227, 47%, 96%);
+    --bg: hsl(230, 17%, 14%);
+    --card-oscura: hsl(228, 28%, 20%);
+}
 main {
     padding: 20px;
+    background-color: white;
 }
 .btn-container {
     display: inline-block;
     width: 60px;
     height: 30px;
     border-radius: 100px;
-    background-color: hsl(228, 12%, 44%);
+    background-color: var(--gris-claro) ;
     position: relative;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
@@ -46,7 +53,7 @@ main {
     margin: 20px 0px 50px 0px;
 }
 .dark-mode-section p {
-    color: hsl(228, 12%, 44%);
+    color: var(--gris-claro);
     font-weight: 700;
 }
 .info h1 {
@@ -55,11 +62,11 @@ main {
 .info span {
     display: inline-block;
     margin-bottom: 20px;
-    color: hsl(228, 12%, 44%);
+    color: var(--gris-claro);
     font-weight: 700;
 }
 .social-follower {
-    background-color: hsl(227, 47%, 96%);
+    background-color: var(--card-bg);
     overflow: hidden;
     border-radius: 5px;
     margin-bottom: 20px;
@@ -94,7 +101,7 @@ main {
 }
 .social-container p {
     font-weight: 700;
-    color: hsl(228, 12%, 44%);
+    color: var(--gris-claro);
 }
 .follower-count {
     font-weight: 700;
@@ -133,7 +140,7 @@ main {
     margin: 20px 0px;
 }
 .overview-single {
-    background-color: hsl(227, 47%, 96%);
+    background-color: var(--card-bg);
     overflow: hidden;
     border-radius: 5px;
     margin-bottom: 20px;
@@ -148,7 +155,7 @@ main {
 }
 .info p {
     font-weight: 700;
-    color: hsl(228, 12%, 44%);
+    color: var(--gris-claro);
 }
 .numbers {
     display: flex;
@@ -185,7 +192,7 @@ main {
         display: flex;
         justify-content: space-between;
     }
-    .info {
+    header .info {
         flex-direction: column;
     }
     hr {
