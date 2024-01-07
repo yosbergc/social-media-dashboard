@@ -181,4 +181,17 @@ main {
     .overview-container {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+    .info {
+        flex-direction: column;
+    }
+    hr {
+        display: none;
+    }
+    .dark-mode-section p {
+        margin-right: 20px;
+    }
 }
