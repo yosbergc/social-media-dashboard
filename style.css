@@ -9,10 +9,12 @@
     --card-bg: hsl(227, 47%, 96%);
     --bg: hsl(230, 17%, 14%);
     --card-oscura: hsl(228, 28%, 20%);
+    --text: hsl(228, 34%, 66%);
 }
 main {
     padding: 20px;
     background-color: white;
+    transition: 0.2s ease-out;
 }
 .btn-container {
     display: inline-block;
@@ -148,7 +150,7 @@ main {
     width: 100%;
     padding: 20px;
 }
-.info {
+.overview-single .info {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
